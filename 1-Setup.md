@@ -11,5 +11,7 @@
     * System Preferences
         * Trackpad scroll direction
         * Right click settings
+    * Keyboard
+        * function key defaults
 
 * 
