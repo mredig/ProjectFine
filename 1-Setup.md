@@ -13,5 +13,3 @@
         * Right click settings
     * Keyboard
         * function key defaults
-
-* 
