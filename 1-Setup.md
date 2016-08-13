@@ -4,3 +4,5 @@
     * System Preferences
         * Trackpad scroll direction
         * Right click settings
+
+* 
