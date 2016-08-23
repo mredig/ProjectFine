@@ -14,8 +14,8 @@
 
 
 
-	let attackAction = SKAction.sequence([ninjaAttackAnimation, ninjaWalkAnimation])
-	ninja?.runAction(attackAction)
+		let attackAction = SKAction.sequence([ninjaAttackAnimation, ninjaWalkAnimation])
+		ninja?.runAction(attackAction)
 
 
 
