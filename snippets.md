@@ -3,6 +3,47 @@
 
 variable declaration
 
+		var ogreDieAnimation = SKAction()
+
+
+create animation
+
+
+
+		//ogre die animation
+		let ogreDieAtlas = SKTextureAtlas(named: "OgreDie")
+		var ogreDieArray = [SKTexture]()
+		for textureName in ogreDieAtlas.textureNames.sort() {
+			ogreDieArray.append(ogreDieAtlas.textureNamed(textureName))
+		}
+		ogreDieAnimation = SKAction.animateWithTextures(ogreDieArray, timePerFrame: 1.0/24.0, resize: true, restore: true)
+
+
+
+
+run ogre action
+
+
+		let randomizeOgreAction = SKAction.customActionWithDuration(0, actionBlock: { (SKNode, CGFloat) in
+			self.randomizeOgrePosition()
+		})
+
+		let ogreDieAction = SKAction.sequence([ogreDieAnimation, randomizeOgreAction])
+		let ogre = self.childNodeWithName("Ralph The Ogre")
+
+		ogre?.runAction(ogreDieAction)
+
+
+
+
+
+
+
+### OLD STUFF
+
+
+variable declaration
+
 
 		var ninjaAttackAnimation = SKAction()
 
