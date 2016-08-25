@@ -1,6 +1,14 @@
 # Code Snippets
 
 
+Class variables
+
+		let ogreCooldownTime:NSTimeInterval = 2.0
+		var ogreLastAttack:NSTimeInterval = 0.0
+
+
+
+
 Goes inside update
 
 
@@ -11,6 +19,18 @@ Goes inside update
 		} else {
 			ogre.xScale = 1
 		}
+
+
+		let timeSinceLastAttack = currentTime - ogreLastAttack
+		if distanceBetweenIsWithinXDistance(ogre.position, ninja.position, 64.0) && timeSinceLastAttack > ogreCooldownTime {
+		//ogre attack!
+			ogre.runAction(ogreAttackAnimation)
+			ogreLastAttack = currentTime
+		}
+
+
+
+
 
 
 
