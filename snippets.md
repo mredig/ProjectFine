@@ -1,6 +1,22 @@
 # Code Snippets
 
 
+Goes inside update
+
+
+		let isClose = distanceBetweenIsWithinXDistance(ogre.position, ninja.position, 3)
+
+		if ninja.position.x <= ogre.position.x && !isClose {
+			ogre.xScale = -1
+		} else {
+			ogre.xScale = 1
+		}
+
+
+
+### Old Code
+
+
 variable declaration
 
 		var ogreDieAnimation = SKAction()
